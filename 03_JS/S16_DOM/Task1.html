@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeImageTitle() {
+        var imgDomElement = document.querySelector("img");
+        imgDomElement.src =
+          "https://s3-eu-west-1.amazonaws.com/blog.forestadmin.com/2021/09/FA-article-nodeJS@2x-1-.png";
+      }
+
+      function ChangeToReact() {
+        var img = document.querySelector("#tech");
+        img.src =
+          "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>React JS</h2>
+    <img
+      id="tech"
+      src="https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png"
+      width="500"
+      height="300"
+    />
+    <br />
+    <button onclick="ChangeToReact()">React JS</button>
+    <button
+      onclick="changeImageTitle()
+    
+    "
+    >
+      Node JS
+    </button>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeh2() {
+        var h2DomElements = document.querySelectorAll("h2"); // [h2,h2 ]
+        var h2Ref1 = h2DomElements[0];
+
+        var h2Ref2 = h2DomElements[1];
+
+        h2Ref1.innerText = "Javascript";
+
+        h2Ref2.innerText = "is Easy";
+
+        // var title1 = document.querySelector("#title1");
+        // var title2 = document.querySelector("#title2");
+
+        // title1.innerText = "Heading 1 Changed";
+
+        // title2.innerText = "Heading 2 Changed";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Heading 1</h2>
+
+    <h2>Heading 2</h2>
+
+    <button onclick="changeh2()">Change title</button>
+  </body>
+</html>
