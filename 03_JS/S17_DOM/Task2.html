@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function showHidePassword() {
+        var inputDomElement = document.getElementById("i1");
+        var input2 = document.getElementById("i2");
+
+        inputDomElement.type = "text";
+        input2.type = "radio";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Show / Hide Password</h2>
+
+    <input type="password" id="i1" name="title" /><br /><br />
+    <input type="checkbox" id="i2" name="gender" />
+    <label>Checkbox</label><br /><br />
+    <button onclick="showHidePassword()">Show Password</button>
+  </body>
+</html>

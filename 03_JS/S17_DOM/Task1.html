@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function getInput() {
+        var inputDomElement = document.querySelector(".c1");
+        inputDomElement.placeholder = "Value Changed";
+        inputDomElement.type = "password";
+
+        var inputValue = inputDomElement.value;
+        console.log(inputValue);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Javascript</h2>
+    <input class="c1" type="text" placeholder="Enter Value" />
+    <button onclick="getInput()">Submit</button>
+  </body>
+</html>

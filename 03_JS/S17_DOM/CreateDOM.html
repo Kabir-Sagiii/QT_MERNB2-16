@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function createPara() {
+        var pDOM = document.createElement("p"); //<p> </p>
+
+        pDOM.innerText = "I ahave created First Para DOM element";
+        //<p> ----- </p>
+
+        var bodyDom = document.querySelector("body");
+
+        bodyDom.appendChild(pDOM);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Create DOM element</h2>
+    <button onclick="createPara()">Create</button>
+  </body>
+</html>
