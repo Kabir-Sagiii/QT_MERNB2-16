@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function createDiv() {
+        var div = document.createElement("div"); // div DOM Element
+        div.innerText = "This is div Element";
+
+        div.style.color = "red";
+        div.style.backgroundColor = "black";
+        div.style.padding = "20px";
+        div.style.margin = "20px";
+
+        document.querySelector("body").appendChild(div);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Create Div Element</h2>
+    <button onclick="createDiv()">Create Div</button>
+  </body>
+</html>

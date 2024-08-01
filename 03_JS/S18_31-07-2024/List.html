@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function createOL() {
+        var ol = document.createElement("ol");
+
+        var li1 = document.createElement("li"); //<li>   </li>
+
+        var li2 = document.createElement("li");
+
+        var li3 = document.createElement("li");
+
+        var li4 = document.createElement("li");
+
+        li1.innerText = "Suresh";
+        li2.innerText = "Mahesh";
+        li3.innerText = "Ramesh";
+        li4.innerText = "Rajesh";
+
+        ol.appendChild(li1); //<ol><li>Suresh</li></ol>
+        ol.appendChild(li2); //<ol><li>Suresh</li> <li>Mahesh</li></ol>
+        ol.appendChild(li3);
+        ol.appendChild(li4);
+
+        var body = document.querySelector("body");
+        body.appendChild(ol);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Ordered List in HTML</h2>
+    <ol>
+      <li>Ramesh</li>
+      <li>Suresh</li>
+      <li>Mahesh</li>
+      <li>Rakesh</li>
+      <li>Ganesh</li>
+      <li>Mukesh</li>
+    </ol>
+    <button onclick="createOL()">Create OL</button>
+    <h2>Ordered List in Javascript</h2>
+  </body>
+</html>
